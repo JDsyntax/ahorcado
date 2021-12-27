@@ -77,7 +77,7 @@ def run():
         draw_hangman(count)
         print('')
         print(hidden_word)
-        letter = input('Escribe un letra: ').lower()
+        letter = input('Escribe una letra: ').lower()
         replace_letter(letter)
         if letter not in hidden_word:
             count += 1
@@ -111,7 +111,7 @@ def run():
     anws = input('Quieres volver a jugar (S)i o (N)o: ')
     # Bucle de reinicio del juego
     while anws.lower() != 's' and anws.lower() != 'n':
-        print('Inserta un respuesta valida')
+        print('Inserta una respuesta valida')
         anws = input('Quieres volver a jugar (S)i o (N)o: ')
 
     if anws.lower() == 's':
